@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <script type="text/javascript" src="jquery-3.2.1.js"></script>
+	    <script type="text/javascript" src="jquery-ui.js"></script>
+	    <script type="text/javascript" src="trianglepeg.js"></script>
+	    <link rel="stylesheet" type="text/css" href="trianglepeg.css" />
+	</head>
+	<body>
+		<div class="leftParent">
+			<div class="openPegParent">
+				<div class="openPegLabel">Open peg</div>
+				<div>
+					<lebel>
+						<input type="radio" name="openPeg"	value="random" checked>
+						Random
+					</lebel>
+					<lebel>
+						<input type="radio" name="openPeg" value="manual">
+						Manual
+					</lebel>
+				</div>
+			</div>
+			<div class="controlButtons">
+				<input type="button" value="Play" id="play">
+			</div>
+			<div class="controlButtons" style="display:none;">
+				<input type="button" value="Reset" id="reset">
+				<input type="button" value="Hint" id="hint">
+			</div>
+			<label id="totalMoves"></label>
+		</div>
+		<div class="canvasDiv">
+			<canvas id="myCanvas" width="500" height="500"></canvas>
+			<div class="pegs">
+				<div class="pegRow">
+					<div class="circleContainer" style="margin-top: 32px;margin-left: 225px">
+						<div class="peg" pegid="11"></div>
+						<div class="openPeg" pegid="11"></div>
+					</div>
+				</div>
+				<div class="pegRow">
+					<div class="circleContainer" style="margin-left: 180px">
+						<div class="peg" pegid="21"></div>
+						<div class="openPeg" pegid="21"></div>
+					</div>
+					<div class="circleContainer" style="margin-left: 40px">
+						<div class="peg" pegid="22"></div>
+						<div class="openPeg" pegid="22"></div>
+					</div>
+				</div>
+				<div class="pegRow">
+					<div class="circleContainer" style="margin-left: 130px">
+						<div class="peg" pegid="31"></div>
+						<div class="openPeg" pegid="31"></div>
+					</div>
+					<div class="circleContainer" style="margin-left: 43px">
+						<div class="peg" pegid="32"></div>
+						<div class="openPeg" pegid="32"></div>
+					</div>
+					<div class="circleContainer" style="margin-left: 47px">
+						<div class="peg" pegid="33"></div>
+						<div class="openPeg" pegid="33"></div>
+					</div>
+				</div>
+				<div class="pegRow">
+					<div class="circleContainer" style="margin-left: 80px">
+						<div class="peg" pegid="41"></div>
+						<div class="openPeg" pegid="41"></div>
+					</div>
+					<div class="circleContainer" style="margin-left: 50px">
+						<div class="peg" pegid="42"></div>
+						<div class="openPeg" pegid="42"></div>
+					</div>
+					<div class="circleContainer" style="margin-left: 39px">
+						<div class="peg" pegid="43"></div>
+						<div class="openPeg" pegid="43"></div>
+					</div>
+					<div class="circleContainer" style="margin-left: 51px">
+						<div class="peg" pegid="44"></div>
+						<div class="openPeg" pegid="44"></div>
+					</div>
+				</div>
+				<div class="pegRow">
+					<div class="circleContainer" style="margin-left: 30px">
+						<div class="peg" pegid="51"></div>
+						<div class="openPeg" pegid="51"></div>
+					</div>
+					<div class="circleContainer" style="margin-left: 50px">
+						<div class="peg" pegid="52"></div>
+						<div class="openPeg" pegid="52"></div>
+					</div>
+					<div class="circleContainer" style="margin-left: 42px">
+						<div class="peg" pegid="53"></div>
+						<div class="openPeg" pegid="53"></div>
+					</div>
+					<div class="circleContainer" style="margin-left: 48px">
+						<div class="peg" pegid="54"></div>
+						<div class="openPeg" pegid="54"></div>
+					</div>
+					<div class="circleContainer" style="margin-left: 50px">
+						<div class="peg" pegid="55"></div>
+						<div class="openPeg" pegid="55"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

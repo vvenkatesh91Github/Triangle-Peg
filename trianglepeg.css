@@ -1,0 +1,92 @@
+.leftParent
+{
+    width: 17%;
+    height: 80%;
+    float: left;
+    margin-right: 5%;
+    text-align: center;
+}
+
+.canvasDiv
+{
+	width: 500px;
+    height: 500px;
+    float: left;
+}
+
+.peg
+{
+	width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #409094;
+}
+
+.openPeg
+{
+	width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: relative;
+    top: 40%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    background-color: black;
+    display: none;
+}
+
+.pegs
+{
+	width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 9px;
+}
+
+.pegRow
+{
+	height: 100px;
+    width: 500px;
+}
+
+.circleContainer
+{
+	width: 50px;
+    height: 60px;
+    float: left;
+    margin-top: 20px;
+}
+
+.openPegParent
+{
+	height: 20%;
+}
+
+.openPegLabel
+{
+	height: 40%;
+    font-size: larger;
+    font-weight: bold;	
+}
+
+.controlButtons
+{
+	height: 15%;
+}
+
+.peg:hover
+{
+    background-color: aquamarine;
+}
+
+.blink
+{
+    animation:blink 100ms infinite alternate;
+}
+
+@keyframes blink {
+    from { opacity:1; }
+    to { opacity:0; }
+};
